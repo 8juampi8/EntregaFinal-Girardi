@@ -1,20 +1,21 @@
+import { Link } from "react-router-dom"
 import Cartwidget from "./Cartwidget/Cartwidget"
 
 const Navbar = () => {
   return (
     <nav className="navbar">
 
-        <div className="brand">
+        <Link to="/" className="brand">
             <img src="" alt="" />
-        </div>
+        </Link>
 
         <ul>
 
-            <li>Latas</li>
+            <Link to="/category/Lata">Latas</Link>
 
-            <li>Choperas 20L</li>
+            <Link to="/category/Chopera 20L">Choperas 20L</Link>
 
-            <li>Choperas50L</li>
+            <Link to="/category/Chopera 50L">Choperas50L</Link>
 
         </ul>
 
