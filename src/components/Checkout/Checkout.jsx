@@ -3,7 +3,7 @@ import { useContext, useState } from 'react'
 import {Cartcontext} from "../../context/Cartcontext"
 import { Timestamp, collection, addDoc } from 'firebase/firestore'
 import db from "../../db/db.js"
-import Checkoutresponse from './Checkoutresponse/Checkoutresponse.jsx'
+import Checkoutresponse from './Checkoutresponse/Checkoutresponse'
 import validateForm from '../../utils/validateForm.js'
 import { toast } from 'react-toastify'
 import { SyncLoader } from 'react-spinners'

@@ -4,7 +4,7 @@ import Itemdetail from './Itemdetail/Itemdetail'
 import { useParams, useNavigate } from 'react-router-dom'
 import { SyncLoader } from 'react-spinners'
 import db from "../../db/db.js"
-import Errorpage from '../Errorpage/Errorpage.jsx'
+import Errorpage from '../Errorpage/Errorpage'
 import "./Itemdetailcontainer.css"
 
 const Itemdetailcontainer = () => {
