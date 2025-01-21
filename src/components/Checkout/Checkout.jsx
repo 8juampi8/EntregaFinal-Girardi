@@ -1,4 +1,4 @@
-import Checkoutform from './CheckoutForm/Checkoutform'
+import Checkoutform from './Checkoutform/Checkoutform'
 import { useContext, useState } from 'react'
 import {Cartcontext} from "../../context/Cartcontext"
 import { Timestamp, collection, addDoc } from 'firebase/firestore'
