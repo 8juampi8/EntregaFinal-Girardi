@@ -1,0 +1,30 @@
+.checkoutresponse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    justify-content: center;
+}
+
+.checkoutresponse h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.checkoutresponse h3{
+    color: #fa6829;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.go-home-btn{
+    text-decoration: none;
+    color: #fa6829;
+    border: 1px solid #fa6829;
+    padding: 10px;
+    border-radius: 20px;
+} .go-home-btn:hover{
+    background-color: #fa6829;
+    color: white;
+}

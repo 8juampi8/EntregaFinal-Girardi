@@ -1,3 +1,6 @@
+import db from "../db/db.js"
+import { collection, addDoc } from "firebase/firestore"
+
 const products = [
 
     // LATAS    
@@ -7,7 +10,8 @@ const products = [
         image:"../../img/latas.jpg",
         price: 1500,
         category: "Lata",
-        description: ""
+        description: "",
+        stock: 10
     },
 
     {
@@ -16,7 +20,8 @@ const products = [
         image:"../../img/latas.jpg",
         price: 1500,
         category: "Lata",
-        description: ""
+        description: "",
+        stock: 10
     },
 
     {
@@ -25,7 +30,8 @@ const products = [
         image:"../../img/latas.jpg",
         price: 1500,
         category: "Lata",
-        description: ""
+        description: "",
+        stock: 10
     },
 
     {
@@ -34,7 +40,8 @@ const products = [
         image:"../../img/latas.jpg",
         price: 1500,
         category: "Lata",
-        description: ""
+        description: "",
+        stock: 10
     },
 
     {
@@ -43,7 +50,8 @@ const products = [
         image:"../../img/latas.jpg",
         price: 1500,
         category: "Lata",
-        description: ""
+        description: "",
+        stock: 10
     },
 
     // CHOPERAS 20L
@@ -53,7 +61,8 @@ const products = [
         image:"../../img/chopera.jpg",
         price: 22500,
         category: "Chopera 20L",
-        description: ""
+        description: "",
+        stock: 10
     },
 
     {
@@ -62,7 +71,8 @@ const products = [
         image:"../../img/chopera.jpg",
         price: 22500,
         category: "Chopera 20L",
-        description: ""
+        description: "",
+        stock: 10
     },
 
     {
@@ -71,7 +81,8 @@ const products = [
         image:"../../img/chopera.jpg",
         price: 22500,
         category: "Chopera 20L",
-        description: ""
+        description: "",
+        stock: 10
     },
 
     {
@@ -80,7 +91,8 @@ const products = [
         image:"../../img/chopera.jpg",
         price: 22500,
         category: "Chopera 20L",
-        description: ""
+        description: "",
+        stock: 10
     },
 
     {
@@ -89,7 +101,8 @@ const products = [
         image:"../../img/chopera.jpg",
         price: 22500,
         category: "Chopera 20L",
-        description: ""
+        description: "",
+        stock: 10
     },
 
     // CHOPERAS 50L
@@ -99,7 +112,8 @@ const products = [
         image:"../../img/chopera.jpg",
         price: 30000,
         category: "Chopera 50L",
-        description: ""
+        description: "",
+        stock: 10
     },
 
     {
@@ -108,7 +122,8 @@ const products = [
         image:"../../img/chopera.jpg",
         price: 30000,
         category: "Chopera 50L",
-        description: ""
+        description: "",
+        stock: 10
     },
 
     {
@@ -117,7 +132,8 @@ const products = [
         image:"../../img/chopera.jpg",
         price: 30000,
         category: "Chopera 50L",
-        description: ""
+        description: "",
+        stock: 10
     },
 
     {
@@ -126,7 +142,8 @@ const products = [
         image:"../../img/chopera.jpg",
         price: 30000,
         category: "Chopera 50L",
-        description: ""
+        description: "",
+        stock: 10
     },
 
     {
@@ -135,16 +152,21 @@ const products = [
         image:"../../img/chopera.jpg",
         price: 30000,
         category: "Chopera 50L",
-        description: ""
+        description: "",
+        stock: 10
     },
 ]
 
-const getProducts = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(products)
-        }, 2000)
-    })
+const seedProducts = async() => {
+    try{
+        const productsRef = collection(db, "products")
+        products.map(async({id, ...dataProduct})=>{
+            await addDoc(productsRef, dataProduct)
+        })
+        console.log("Productos subidos correctamente")
+    } catch(error){
+        console.error(error)
+    }
 }
 
-export {getProducts}
+seedProducts()

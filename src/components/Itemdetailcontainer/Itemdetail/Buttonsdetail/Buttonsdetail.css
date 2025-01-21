@@ -1,0 +1,24 @@
+.buttonsdetail{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish-btn, .continue-btn{
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.finish-btn{
+    background-color: #fa6829;
+}
+
+.continue-btn{
+    border: 1px solid #f3a482;
+    color: #f3a482;
+} .continue-btn:hover{
+    background-color: #f3a482;
+    color: white;
+}

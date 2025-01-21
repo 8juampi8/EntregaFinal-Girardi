@@ -1,0 +1,12 @@
+.cartwidget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 36px;
+}
+.cart-quantity{
+    font-size: 18px;
+    position: relative;
+    bottom: 3px;
+    color: #FF7033;
+}

@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px;
+    background-color: #152233;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+}
+.brand img{
+    width: 60px;
+}
+
+.category-container{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category-link{
+    font-size: 19px;
+    text-decoration: none;
+    color: white;
+    padding: 3px 10px;
+}.category-link:hover{
+    background-color: #fa6829;
+    border-radius: 20px;
+}.category-link:active{
+    background-color: #f3a482;
+}

@@ -1,0 +1,37 @@
+.itemcount{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.itemcount button{
+    padding: 15px 10px;
+    border-radius: 100px;
+    border: none;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.less-btn{
+    background-color: rgb(228, 74, 74);
+    font-size: 20px;
+} .less-btn:hover{
+    background-color: #f3a482;
+}
+
+.more-btn{
+    background-color: rgb(59, 95, 6);
+    font-size: 20px;
+} .more-btn:hover{
+    background-color: rgb(167, 177, 152);
+}
+
+.addproduct-btn{
+    background-color: #fa6829;
+    font-size: 16px;
+} .addproduct-btn:hover{
+    background-color: #f3a482;
+}

@@ -1,9 +1,9 @@
-import React from 'react'
 import Item from '../Item/Item'
+import "./Itemlist.css"
 
 const Itemlist = ({products}) => {
   return (
-    <div>
+    <div className='itemlist'>
 
       {
         products.map((product)=>(

@@ -1,0 +1,22 @@
+.errorpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    justify-content: center;
+}
+
+.errorpage h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    width: 685px;
+    justify-content: space-between;    
+}
+
+.errorpage p{
+    color: #fa6829;
+    font-size: 20px;
+}

@@ -1,0 +1,30 @@
+.itemdetail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 180px;
+}
+
+.itemdetail img{
+    border-radius: 40px;
+    width: 500px;
+}
+
+.text-box{
+    padding-left: 50px;
+    width: 440px;
+}
+
+.text-box h2{
+    font-size: 32px;
+    color: white;
+}
+
+.text-box p{
+    font-size: 18px;
+    color: white;
+}
+
+.text-detail{
+    padding: 15px 0;
+}

@@ -1,0 +1,24 @@
+.noitemsincart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    justify-content: center;
+}
+
+.noitemsincart h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.go-buy-btn{
+    text-decoration: none;
+    color: #fa6829;
+    border: 1px solid #fa6829;
+    padding: 10px;
+    border-radius: 20px;
+} .go-buy-btn:hover{
+    background-color: #fa6829;
+    color: white;
+}
